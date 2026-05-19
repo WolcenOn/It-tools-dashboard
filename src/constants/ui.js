@@ -1,4 +1,23 @@
-import { Activity, Boxes, ChevronRight, Cloud, Cpu, Database, FileArchive, HardDrive, Network, Server, Shield, Terminal, Wrench } from "lucide-react";
+import {
+  Activity,
+  BookOpen,
+  Boxes,
+  ChevronRight,
+  Cloud,
+  Cpu,
+  Database,
+  Download,
+  ExternalLink,
+  FileArchive,
+  GraduationCap,
+  HardDrive,
+  MessageCircle,
+  Network,
+  Server,
+  Shield,
+  Terminal,
+  Wrench,
+} from "lucide-react";
 
 export const learningStyles = {
   Baja: "bg-emerald-500/15 text-emerald-300 border-emerald-500/30",
@@ -19,9 +38,10 @@ export const categoryIcons = {
   Datos: Database,
   Remoto: Server,
   Reparación: Wrench,
+  Default: ChevronRight,
 };
 
-const resourceMeta = {
+export const resourceMeta = {
   official: { label: "Web oficial", icon: ExternalLink },
   download: { label: "Descarga", icon: Download },
   docs: { label: "Manual / Docs", icon: BookOpen },
