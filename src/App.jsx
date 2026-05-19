@@ -1,40 +1,47 @@
+
 import React, { useMemo, useState } from "react";
-import { Search, Plus, Printer, X, ChevronRight, Server, Shield, Network, Database, Cpu, Cloud, Terminal, HardDrive, Activity, Wrench, Boxes, FileArchive } from "lucide-react";
+import {
+  Activity,
+  BookOpen,
+  Boxes,
+  ChevronRight,
+  Cloud,
+  Cpu,
+  Database,
+  Download,
+  ExternalLink,
+  FileArchive,
+  GraduationCap,
+  HardDrive,
+  MessageCircle,
+  Network,
+  Plus,
+  Printer,
+  Search,
+  Server,
+  Shield,
+  Terminal,
+  Wrench,
+  X,
+} from "lucide-react";
 
 /**
  * Dashboard de Referencia para Técnicos IT y Administradores de Sistemas
- * Stack recomendado: React + Vite + Tailwind CSS
+ * Sustituye tu src/App.jsx por este archivo.
  *
- * Este archivo puede usarse como src/App.jsx en un proyecto Vite.
- * El objeto IT_TOOLS_DB está centralizado y es fácilmente expandible.
+ * Incluye:
+ * - 12 categorías y 72 herramientas
+ * - Enlaces a web oficial, descarga, docs/manual, comunidad y aprendizaje
+ * - Búsqueda en tiempo real
+ * - Filtro por categoría y curva de aprendizaje
+ * - Modal de detalle
+ * - Formulario para añadir herramientas locales
+ * - Exportar a PDF mediante window.print()
  */
-
-const learningStyles = {
-  Baja: "bg-emerald-500/15 text-emerald-300 border-emerald-500/30",
-  Media: "bg-amber-500/15 text-amber-300 border-amber-500/30",
-  Alta: "bg-rose-500/15 text-rose-300 border-rose-500/30",
-};
-
-const categoryIcons = {
-  Diagnóstico: Activity,
-  Redes: Network,
-  Seguridad: Shield,
-  Monitorización: Cpu,
-  Virtualización: Boxes,
-  Contenedores: Cloud,
-  Automatización: Terminal,
-  Backup: FileArchive,
-  Almacenamiento: HardDrive,
-  Datos: Database,
-  Remoto: Server,
-  Reparación: Wrench,
-};
 
 const IT_TOOLS_DB = [
   {
-    category: "Diagnóstico",
-    description: "Utilidades para identificar cuellos de botella, errores de sistema, procesos conflictivos y fallos de hardware o software.",
-    tools: [
+    "category": "Diagnóstico",    tools: [
       {
         name: "Sysinternals Suite",
         learning: "Media",
