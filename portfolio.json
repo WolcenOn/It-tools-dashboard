@@ -1,0 +1,10 @@
+{
+  "categoria": "Apps",
+  "icono": "📱",
+  "etiquetas": ["dashboard", "utilidades", "herramientas", "IT"],
+  "descripcion": "Panel de utilidades técnicas para reunir herramientas de trabajo en una misma interfaz.",
+  "demo": "",
+  "destacado": false,
+  "orden": 48,
+  "ocultar": false
+}
